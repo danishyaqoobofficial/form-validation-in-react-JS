@@ -28,7 +28,7 @@ function App() {
               <div>
                 <label className='text-[13px] 404040 ' htmlFor="username">Full Name</label>
                 <input 
-                  className='mt-[4px] flex-1 w-full outline-none border border-black/30 404040 px-[12px] text-[14px] py-[9px] rounded-[6px] ' 
+                  className={`mt-[4px] flex-1 w-full outline-none border border-black/30 404040 px-[12px] text-[14px] py-[9px] rounded-[6px] ${formik.errors.name && formik.touched.name && "border-red-300 "} `}
                   type="text" 
                   name="name" 
                   id="username" 
@@ -42,7 +42,7 @@ function App() {
               <div className='mt-[14px] '>
                 <label className='text-[13px] 404040 ' htmlFor="Email">Email</label>
                 <input 
-                  className='mt-[4px] flex-1 w-full outline-none border border-black/30 404040 px-[12px] text-[14px] py-[9px] rounded-[6px] ' 
+                  className={`mt-[4px] flex-1 w-full outline-none border border-black/30 404040 px-[12px] text-[14px] py-[9px] rounded-[6px] ${formik.errors.email && formik.touched.email && "border-red-300 "} `}
                   type="email" 
                   name="email" 
                   id="Email" 
@@ -56,7 +56,7 @@ function App() {
               <div className='mt-[14px] '>
                 <label className='text-[13px] 404040 ' htmlFor="Password">Password</label>
                 <input 
-                  className='mt-[4px] flex-1 w-full outline-none border border-black/30 404040 px-[12px] text-[14px] py-[9px] rounded-[6px] ' 
+                  className={`mt-[4px] flex-1 w-full outline-none border border-black/30 404040 px-[12px] text-[14px] py-[9px] rounded-[6px] ${formik.errors.password && formik.touched.password && "border-red-300 "} `}
                   type="password" 
                   name="password" 
                   id="Password" 
@@ -70,7 +70,7 @@ function App() {
               <div className='mt-[14px] '>
                 <label className='text-[13px] 404040 ' htmlFor="Confirm Password">Confirm Password</label>
                 <input 
-                  className='mt-[4px] flex-1 w-full outline-none border border-black/30 404040 px-[12px] text-[14px] py-[9px] rounded-[6px] ' 
+                  className={`mt-[4px] flex-1 w-full outline-none border border-black/30 404040 px-[12px] text-[14px] py-[9px] rounded-[6px] ${formik.errors.confirm_password && formik.touched.confirm_password && "border-red-300 "} `}
                   type="password" 
                   name="confirm_password" 
                   id="Confirm Password" 
